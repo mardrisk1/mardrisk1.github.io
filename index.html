@@ -2,26 +2,13 @@
 <html lang="hy">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://mardriskai.com">
     <title>redirecting</title>
-    
-    <!-- JavaScript դինամիկ վերահասցեավորում բոլոր էջերի համար -->
     <script type="text/javascript">
-        // Վերցնում է ընթացիկ էջի վերջավորությունը և պարամետրերը (օրինակ՝ /ru?lang=am)
-        var currentPath = window.location.pathname + window.location.search + window.location.hash;
-        
-        // Կատարում է ավտոմատ անցում նոր կայքի համապատասխան էջին
-        window.location.href = "https://mardriskai.com" + currentPath;
+        window.location.href = "https://mardriskai.com";
     </script>
 </head>
 <body>
-    <p>Եթե էջը ավտոմատ չի թարմացվում, խնդրում ենք սեղմել 
-        <a id="redirect-link" href="https://mardriskai.com">այստեղ</a>:
-    </p>
-
-    <!-- Կոդ, որը փոխում է նաև «այստեղ» հղման հասցեն, եթե մարդը ձեռքով սեղմի -->
-    <script type="text/javascript">
-        var currentPath = window.location.pathname + window.location.search + window.location.hash;
-        document.getElementById("redirect-link").href = "https://mardriskai.com" + currentPath;
-    </script>
+    <p>Եթե էջը ավտոմատ չի թարմացվում, խնդրում ենք սեղմել <a href="https://mardriskai.com">այստեղ</a>։</p>
 </body>
 </html>
