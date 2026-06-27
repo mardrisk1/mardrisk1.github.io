@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <title>redirecting</title>
+    <script type="text/javascript">
+        // Վերցնում է այն հասցեն, որով մարդը փորձել է մտնել (օրինակ՝ /ru)
+        var currentPath = window.location.pathname + window.location.search + window.location.hash;
+        
+        // Անմիջապես տանում է նոր կայքի համապատասխան էջին
+        window.location.replace("https://mardriskai.com" + currentPath);
+    </script>
+</head>
+<body>
+    <p>Վերահասցեավորում... Եթե էջը չի բացվում, սեղմեք <a id="fallback-link" href="https://mardriskai.com">այստեղ</a>։</p>
+    <script type="text/javascript">
+        var currentPath = window.location.pathname + window.location.search + window.location.hash;
+        document.getElementById("fallback-link").href = "https://mardriskai.com" + currentPath;
+    </script>
+</body>
+</html>
